@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "6d857121bfc215d3313676a749890f68";
+const API_KEY = "cd00d8c55831cbeec8ccdad1db16d6d2";
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3/";
 
@@ -20,7 +20,7 @@ export async function fetchSearchFilmByName(filmName) {
 
 export async function fetchFilmInfo(movie_id) {
   const response = await axios.get(
-    `/movie/${movie_id}?api_key=${API_KEY}&language=en-US`
+    `/movie/${movie_id}?api_key=cd00d8c55831cbeec8ccdad1db16d6d2&language=en-US`
   );
   return response.data;
 }

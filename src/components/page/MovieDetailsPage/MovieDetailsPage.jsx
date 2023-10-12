@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Outlet, Link } from "react-router-dom";
+import { useParams, Outlet} from "react-router-dom";
 import * as FilmsAPI from "../../../services/fecthMovies";
 import FilmDetailsCard from "./FilmDetailsCard";
 import { ButtonGoBackContainer, ButtonGoBack } from "./MovieDetailsPage.styled";
@@ -10,7 +10,7 @@ const MovieDetailsPage = () => {
   const { id } = useParams();
   const [film, setFilm] = useState();
   const location = useLocation();
-  const [prevLocation, setPrevLocation] = useState(
+  const [prevLocation] = useState(
     location?.state?.from ?? "/"
   );
 

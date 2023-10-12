@@ -1,5 +1,5 @@
 import { GenerateGenres } from "../Genres/GenerateGenres";
-import { ItemLink, Item, Title, MetaWrapper, Image } from "./CardFilm.styled";
+import { Item, Title, MetaWrapper, Image } from "./CardFilm.styled";
 import PropTypes from "prop-types";
 
 
